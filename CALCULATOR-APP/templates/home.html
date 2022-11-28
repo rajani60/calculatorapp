@@ -1,0 +1,43 @@
+<!DOCKTYPE html>
+<html lang="en">
+    <meta charset = "UTF-8">
+    <meta  http-equiv = "X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width intial-scale=1.0">
+    <head>
+        <title>Calculator App</title>
+    </head>
+    <style>
+        h3{
+        color:rgb(191, 0, 255);
+        text-align:center;
+        }
+        body{
+        background-color: rgb(144, 152, 152);
+        }
+        .cal-form{
+            color:rgb(111, 0, 255);
+            text-align:center;
+            float:middle;
+        }
+    </style>
+    <body>
+        <h3>Welcome to calculator App</h3>
+        <div class = "cal-form">
+        <form action="{{url_for('calculator')}}" method="POST">
+        <label>Enter first number</label> 
+        <input type="text" id="num1" name="num1"><br><br>
+        <label>Enter second number</label>
+        <input type="text" id="num2" name="num2"><br><br>
+        <label>operator:</label>
+        <input type="text" id="op" name="op"><br><br>
+        <button id="submit" name="submit-button" value="SUBMIT">SUBMIT</button>
+        </form>
+        </div>
+
+        
+
+
+
+
+    </body>
+</html>
